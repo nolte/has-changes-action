@@ -2,6 +2,10 @@
 set -e
 
 function check() {
+  
+  env
+  echo $INPUT_WORKING_DIRECTORY
+
   if [[ -z "$(git status --porcelain)" ]];
   then
     echo "0"
