@@ -5,7 +5,7 @@ function check() {
   cd $INPUT_WORKINGDIRECTORY
 
   set -e
-  output=$(git status --porcelain $INPUT_STATUS_ARGS $INPUT_PATHSPEC)
+  output=$(git status --porcelain $INPUT_STATUS-ARGS $INPUT_PATHSPEC)
   set +e
 
   echo "$output"
