@@ -4,7 +4,7 @@ branding:
   icon: "info"
   color: "yellow"
 inputs:
-  status-args:
+  statusargs:
     description: "Arguments to the `git status` command."
     required: false
     default: ""
