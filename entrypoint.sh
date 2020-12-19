@@ -4,7 +4,6 @@ function check() {
 
   cd $INPUT_WORKINGDIRECTORY
 
-  if [[ -z "$(git status --porcelain)" ]];
   set -e
   output=$(git status --porcelain $INPUT_STATUS_ARGS $INPUT_PATHSPEC)
   set +e
