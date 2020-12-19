@@ -4,13 +4,23 @@ branding:
   icon: "info"
   color: "yellow"
 inputs:
+  status-args:
+    description: "Arguments to the `git status` command."
+    required: false
+    default: ""
+  pathspec:
+    description: "Pattern used to limit paths in the `git status` command."
+    required: false
+    default: ""
   workingdirectory:
     description: "Arguments to the `git status` command."
     required: false
     default: "."
 outputs:
   changed:
-    description: "Whether or not there are uncommitted changes in the folder"
+    description: "Whether or not there are uncommitted changes in the pathspec"
+  changes:
+    description: "Describes list of uncommitted changes in the pathspec"
 runs:
   using: "docker"
   image: "Dockerfile"
