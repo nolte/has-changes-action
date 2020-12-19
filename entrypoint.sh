@@ -2,9 +2,7 @@
 set -e
 
 function check() {
-  
-  env
-  echo $INPUT_WORKINGDIRECTORY
+
   cd $INPUT_WORKINGDIRECTORY
   if [[ -z "$(git status --porcelain)" ]];
   then
