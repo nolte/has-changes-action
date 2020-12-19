@@ -4,7 +4,7 @@ set -e
 function check() {
   
   env
-  echo $INPUT_WORKING_DIRECTORY
+  echo $INPUT_WORKINGDIRECTORY
 
   if [[ -z "$(git status --porcelain)" ]];
   then
